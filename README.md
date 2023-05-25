@@ -12,3 +12,7 @@ aparecer “y otros”.
 ## Diagrama de Clases
 
 ![diagrama de clases](DiagramaClases3.png "Diagrama de clases")
+
+## Pantallazo de la aplicación
+
+![pantallazo de la aplicación](EjecutableConsola.png "Pantallazo de la aplicación")
