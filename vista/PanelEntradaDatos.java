@@ -41,13 +41,54 @@ public class PanelEntradaDatos extends JPanel
 
         //Crear y agregar etiqueta titulo de la biblioteca
         lbTitulo = new JLabel("Biblioteca del señor Pérez    ", JLabel.RIGHT);
-        lbTitulo.setBounds(120,30,120,20);
+        lbTitulo.setBounds(140,30,120,20);
         this.add(lbTitulo);
 
         //Crear y agregar etiqueta titulo libro
         lbTituloLibro = new JLabel("Titulo del libro ", JLabel.RIGHT);
         lbTituloLibro.setBounds(30,70,120,20);
         this.add(lbTituloLibro);
+
+        //Crear y agregar textfield titulo libro
+        tfTituloLibro = new TextField();
+        tfTituloLibro.setBounds(160,70,120,20);
+        this.add(tfTituloLibro);
+
+        //Crear y agregar etiqueta autor
+        lbAutor = new JLabel("Autor ", JLabel.RIGHT);
+        lbAutor.setBounds(30,100,120,20);
+        this.add(lbAutor);
+
+        //Crear y agregar textfield autor
+        tfAutor = new TextField();
+        tfAutor.setBounds(160,100,120,20);
+        this.add(tfAutor);
+
+        //Crear y agregar etiqueta autor2
+        lbAutor2 = new JLabel("Segundo autor ", JLabel.RIGHT);
+        lbAutor2.setBounds(30,130,120,20);
+        this.add(lbAutor2);
+
+        //Crear y agregar textfield autor2
+        tfAutor2 = new TextField();
+        tfAutor2.setBounds(160,130,120,20);
+        this.add(tfAutor2);
+
+        //Crear y agregar etiqueta año edicion
+        lbAñoEdicion = new JLabel("Año de edición ", JLabel.RIGHT);
+        lbAñoEdicion.setBounds(30,160,120,20);
+        this.add(lbAñoEdicion);
+
+        //Crear y agregar textfield año edicion
+        tfAñoEdicion = new TextField();
+        tfAñoEdicion.setBounds(160,160,120,20);
+        this.add(tfAñoEdicion);
+
+        //Crear y agregar etiqueta de lujo
+
+
+
+
 
 
 
@@ -59,56 +100,5 @@ public class PanelEntradaDatos extends JPanel
 
     //Metodos de acceso
 
-    public String getTxtNumeroCelular()
-    {
-        return tfNumeroCelular.getText();
-    }
-
-    public String getTxtOperador()
-    {
-        return (String) cbOperador.getSelectedItem();
-    }
-
-    public String getTxtCantidadMinutos()
-    {
-        return tfCantidadMinutos.getText();
-    }
-
-    public String getTxtValorMinuto()
-    {
-        return tfValorMinuto.getText();
-    }
-
-    public String getTxtCostoPlan()
-    {
-        return tfCostoPlan.getText();
-    }
-
-    public void setTxtCostoPlan(String costo)
-    {
-        tfCostoPlan.setText(costo);
-    }
-
-    public void setTxtNumeroCelular(String numero)
-    {
-        tfNumeroCelular.setText(numero);
-    }
-
-    public void setTxtCantidadMinutos(String minutos)
-    {
-        tfCantidadMinutos.setText(minutos);
-    }
-
-    public void setTxtValorMinuto(String valor)
-    {
-        tfValorMinuto.setText(valor);
-    }
-
-    public void limpiar()
-    {
-        tfNumeroCelular.setText("");
-        tfCantidadMinutos.setText("");
-        tfValorMinuto.setText("");
-        tfCostoPlan.setText("");
-    }
+    
 }
