@@ -6,7 +6,7 @@ public class Libro {
     // Atributos
     //----------------------
 
-    private int id = 0;
+
     private String titulo;
     private String autor;
     private String autor2;
@@ -16,8 +16,7 @@ public class Libro {
 
     // Contructor
 
-    public Libro(int id, String titulo, String autor, String autor2, String añoEdicion, Boolean deLujo) {
-        this.id = id++;
+    public Libro( String titulo, String autor, String autor2, String añoEdicion, Boolean deLujo) {
         this.titulo = titulo;
         this.autor = autor;
         this.autor2 = autor2;
@@ -27,9 +26,6 @@ public class Libro {
 
     // Getters y Setters
 
-    public int getId() {
-        return id;
-    }
 
     public String getTitulo() {
         return titulo;
@@ -51,9 +47,7 @@ public class Libro {
         return deLujo;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public void setTitulo(String titulo) {
         if (titulo.length() > 0) {
@@ -88,7 +82,6 @@ public class Libro {
     @Override
     public String toString() {
         return "Libro{" +
-                "id=" + id +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
                 ", autor2='" + autor2 + '\'' +
